@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="notranslate">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+		rel="stylesheet">
+	<title>Movie Finder</title>
+	<link rel="icon" href="img/MF.png" type="image/png">
+</head>
+
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">Movie Finder</h2>
+			<nav>
+				<a href="index.html">Inicio</a>
+				<a href="buscar.html">Buscar</a>
+				<a href="login.html" id="cerrar-sesion">Cerrar sesión</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="pelicula-principal" id="pelicula-principal-individual"><!--style="background: linear-gradient(rgba(0, 0, 0, .70) 0%, rgba(0,0,0,.50) 100%), url('img/loki.jpg'); background-position: center center; background-size: cover; align-items: center;"-->
+			<div class="contenedor" id="pelicula-individual">
+				<section class="contenedor" id="seccion-info-pelicula">
+					<div class="imagen-contenedor">
+						<img src="" alt="Descripción de la imagen" class="imagen-izquierda">
+					</div>
+					<div class="texto-contenedor">
+						<h3 class="titulo"></h3>
+						<h2 style="font-size: 1.25em;">Vista general</h2>
+						<p class="descripcion" id="descripcion-pelicula-individual" style=" max-width: 100%;">
+						</p>
+						<div class="info-horizontal">
+							<div class="info-grupo">
+								<h2>Fecha de lanzamiento</h2>
+								<p id="fecha"></p>
+							</div>
+							<div class="info-grupo">
+								<h2>Género(s)</h2>
+								<p id="generos"></p>
+							</div>
+							<div class="info-grupo">
+								<h2>Valoración</h2>
+								<p id="valoracion"></p>
+							</div>
+						</div>
+						<a href="#"><button role="button" class="boton" id="botonYT"><i
+									class="fa-solid fa-play"></i>Reproducir trailer</button></a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://kit.fontawesome.com/367278d2a4.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/pelicula.js"></script>
+</body>
+
+</html>
