@@ -16,6 +16,7 @@ app.use('/api/movies/search/title', createProxyMiddleware({ target: 'http://loca
 app.use('/api/movies/:id', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
 app.use('/api/movies/', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
 app.use('/frontend', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
+app.use('/api-docs', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
 
 const PORT = 8080;
 app.listen(PORT, () => {
