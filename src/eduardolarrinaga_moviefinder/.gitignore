@@ -1,0 +1,8 @@
+# Dependencias de Node.js
+node_modules/
+
+# Entorno Virtual de Python
+venv/
+
+# Bytecode compilado de Python
+__pycache__/
